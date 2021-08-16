@@ -1,0 +1,60 @@
+.nav {
+  margin-top: 2rem;
+}
+
+.components {
+  position: relative;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10rem;
+}
+
+.components .nav-link {
+  float: left;
+  text-align: center;
+  width: 100%;
+  border-right: 1px solid black;
+  position: relative;
+}
+
+.components .navlink:last-child {
+  border-right: none;
+}
+
+.active {
+  color: #BF00A3;
+}
+
+#carta-dropdown,
+#carta-dropwdown li {
+  list-style: none;
+}
+
+#carta-dropdown {
+  padding: 0;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  z-index: -1;
+  transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+}
+
+#carta:hover #carta-dropdown {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
+
+#carta-dropdown li {
+  border-bottom: 1px solid black;
+}
+#carta-dropdown li:first-child {
+  margin: 1rem 0;
+}

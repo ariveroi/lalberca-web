@@ -1,0 +1,96 @@
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar {
+  margin-top: 2rem;
+}
+
+#navbar {
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 1400px) {
+  .nav-item {
+    width: 220px;
+    border-left: 1px solid black;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1400px) {
+  .nav-item {
+    width: 140px;
+    border-left: 1px solid black;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  #carta-dropdown {
+    display: none;
+  }
+}
+
+.nav-item {
+  text-align: center;
+}
+
+.nav-item > a{
+  font-size: 18px;
+}
+
+.nav-item:first-child {
+  border-left: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #BF00A3;
+}
+
+.active {
+  color: #BF00A3;
+}
+
+#toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#carta-dropdown,
+#carta-dropwdown li {
+  list-style: none;
+}
+
+#carta-dropdown {
+  padding: 0;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  z-index: -1;
+  transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+}
+
+#carta:hover #carta-dropdown {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
+
+#carta-dropdown li a {
+  border-bottom: 1px solid black;
+}
+
+#carta-dropdown li:first-child {
+  margin: 1rem 0;
+}
+
+#carta-dropdown li:last-child {
+  margin-bottom: 0.4rem;
+}

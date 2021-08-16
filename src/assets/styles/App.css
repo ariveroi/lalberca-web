@@ -1,0 +1,75 @@
+@import url(//db.onlinewebfonts.com/c/6a841ed6f85d1f4ecbe6aad4f68956bc?family=Papyrus+Std);
+
+html,
+body {
+  background-color: #fff;
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+}
+
+
+#root {
+  width: 75%;
+  margin: auto;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+p{
+  font-size: 20px;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Papyrus Std";
+}
+
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.component-container {
+  display: flex;
+  opacity: 0;
+  justify-content: center;
+}
+
+
+.component-container.cargado {
+  opacity: 1;
+  transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+}
+
+@media screen and (max-width: 678px){
+  .component-container{
+    width: 100%;
+  }
+
+  #root{
+    width: 100%;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
